@@ -3,10 +3,10 @@ import { Head } from "./Head"
 import { Box } from "./Box"
 import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
-import {SigninBody} from "../../../common/index"
+// import {SigninBody} from "../../../common/index"
 import { useState } from "react"
 export  const Signin=()=>{
-    const [inputs,setinputs]=useState<SigninBody>({
+    const [inputs,setinputs]=useState({
         
         email:"",
         password:""
