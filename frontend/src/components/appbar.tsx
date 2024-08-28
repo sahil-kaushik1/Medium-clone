@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 export const Appbar = () => {
     const navigate = useNavigate();
     const [button, setButton] = useState("/publish");
-    const [route, setRoute] = useState(localStorage.getItem("token"));
+    // const [route, setRoute] = useState(localStorage.getItem("token"));
 
     useEffect(() => {
         const token = localStorage.getItem("token");
-        setRoute(token);
+    
 
         if (!token) {
             setButton("/signup");
